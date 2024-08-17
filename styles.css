@@ -1,0 +1,146 @@
+/* General Styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    display: flex;
+    background-color: #f1fffd;
+    padding: 10px;
+    text-align: center;
+    img {
+        width: 8%;
+        height: 8%;
+    }
+    h1 {
+        width: 90%;
+        b {
+            color: red;
+        }
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #276724;
+    box-shadow: 5px 5px 15px rgb(0 0 0 / 55%);
+}
+
+nav a {
+    box-shadow: 0px 2px 0px 2px rgb(0 0 0 / 8%);
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    /* text-transform: uppercase; */
+    margin-left: 5px;
+}
+
+nav a:hover {
+    background-color: #7dc855;
+}
+
+.container {
+    padding: 20px;
+}
+
+h1, h2 {
+    color: 211f8d;
+}
+
+footer {
+    background-color: #276724;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-height: 50px;
+}
+
+/* About Section */
+.about {
+    margin-bottom: 40px;
+}
+
+/* Services Section */
+.services ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.services li {
+    background-color: #e3e3e3;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Contact Section */
+.contact form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact form input,
+.contact form textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact form input[type="submit"] {
+    background-color: #276724;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.contact form input[type="submit"]:hover {
+    background-color: #7dc855;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    body {
+        font-size: 15px;
+    }
+    nav {
+        padding: 0.5rem;
+    }
+
+    nav a {
+        padding: 0.5rem;
+        display: block;
+    }
+    
+    .container {
+        padding: 1rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header img {
+        width: 20%;
+    }
+
+    nav a {
+        padding: 0.25rem;
+    }
+
+    .container {
+        padding: 0.5rem;
+    }
+}
